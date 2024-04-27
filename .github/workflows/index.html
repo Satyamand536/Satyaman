@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    body{
+        margin: 0;padding: 0;
+        background-color: black;
+    }
+    ul {
+        list-style: none;
+        padding: 5px;
+        margin: 5px;
+        display: flex;
+        justify-content: flex-end;
+    }
+  
+      ul li {
+        display: inline;
+        padding: 15px;
+        font-weight: 400;
+        font-weight: bolder;
+        color: rgb(201, 179, 50);
+      }
+  
+      ul li a {
+        color: rgb(237, 235, 230);
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+  
+      nav {
+        background-color:black;
+        margin: 0;padding: 0;
+      }
+      
+      .start{
+        color:rgb(128, 68, 0);
+        display:flex;
+        align-items: start;
+      }
+      ul h1{
+        list-style: none;
+        padding: 5px;
+        margin: 5px;
+        
+    }
+    .front{
+      display: grid;
+      grid-template-columns: auto auto;
+      color: #ffffff;
+      
+      font-family: monospace;
+  }
+  .font1{
+      font-size: 50px;
+  }
+  .font2{
+      font-size: 35px;
+      font-weight: 400;
+      color: rgb(248, 244, 239);
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+  }
+  .font3{
+      font-size: 30px;
+      color: blueviolet;
+      font-style: italic;
+  }
+  h2{
+    color: coral;
+  }
+  .holy{
+    border-radius: 15px;
+    width: auto;
+    color: rgb(247, 240, 247);
+    background-color: rgb(255, 0, 119);
+    padding: 10px;margin: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  footer {
+    background-color: #000000;
+    color: #6ed84a;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+</style>
+<body>
+  <header>
+    <nav>
+    <ul><h1 class="start">Satyam Tiwari</h1>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  </header><br><br>
+  <span class="front">
+    <img src="myphoto.jpg" alt="myphoto" width="415px">
+  <span class="front">
+  <div>
+<h2>Hello!</h2>
+<h1 class="font1">I'm Satyam <br>Tiwari</h1>
+<h2 class="font2">Pursuing Engineering </h2>
+<h3 class="font3">Interested in Web development</h3>
+<a href="resume.html"><button class="holy">Resume</button></a>
+  </div>
+</span>
+</span>
+<hr>
+<footer><p>@copy;</p>
+  <a href= "mailto: name@email.com"> Click to Send Mail</a></footer>
+</body>
+</html>

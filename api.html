@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api</title>
+    <link rel="stylesheet" href="api.css">
+    
+</head>
+<body bgcolor="89cb66">
+    <section>
+        <h1>WHAT DOES YOUR NAME SAY ABOUT YOUR PERSONALITY?</h1>
+            <div class="centerdiv">
+                <div class="details">
+                    <label class="name">ENTER YOUR NAME</label><br><br>
+                    <input type="text" id="nameid"><br><br>
+                    <img src="port.png" class="img" alt="k">
+                </div>
+                
+                <button class="clk"> CLICK ME</button>
+            </div>
+        
+    </section>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('button').click(function(){
+                const name = $('#nameid').val();
+                alert(name);
+                $('.img').attr('src',`https://joesch.moe/api/v1/male/random${name}`);
+            });
+
+        });
+    </script>
+</body>
+</html>
